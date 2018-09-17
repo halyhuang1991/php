@@ -10,6 +10,9 @@ use F\subnamespace ;
 $obj = new subnamespace\foo ;
 echo $obj->foofunction()."<br/>";
 echo foo::staticmethod()." ".F\subnamespace\FOO.'<br/>';
+//单例模式
+$db1 = F\subnamespace\Uni::getInstance("getInstance");
+echo $db1 -> getName().'<br/>';
 $a="asa";
 $b="asa";
 echo "Hello World!";
