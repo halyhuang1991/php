@@ -1,0 +1,29 @@
+<!DOCTYPE html> 
+<html> 
+        <head >
+                <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+                <title></title>
+                <script src="../scripts/jquery.min.js"></script>
+                <link href="../css/form.css" rel="stylesheet"/>
+                <script type="text/javascript">
+                $(function(){
+                    $.get("./getdata.php",{q:"ok"},function(data){
+                        $('#get').html(data);
+                    })
+                    $.post("./getpost.php",{q:"ok"},function(data){
+                        $('#post').html(data);
+                    })
+                })
+                </script>
+        </head>
+<body> 
+<div id="get"></div>
+<div class="clear"></div>
+<div id="post"></div>
+<span>Hello World</span>
+<span>
+</span>
+
+
+</body> 
+</html>
