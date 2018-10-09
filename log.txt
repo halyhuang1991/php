@@ -14,9 +14,11 @@ git push -u origin master
 将下载的插进拷贝进xampp/php/ext文件夹中。
 修改php.ini文件，在文件末尾添加几行配置信息
 [xdebug]
-zend_extension=”D:/xampp/php/ext/php_xdebug-2.5.5-7.1-vc14-nts.dll” （路径及文件名自己确定）
+zend_extension=C:\xampp\php\ext\php_xdebug-2.6.1-7.2-vc15.dll
 xdebug.remote_enable = 1
 xdebug.remote_autostart = 1
+xdebug.remote_host=127.0.0.1
+xdebug.remote_port=9010
 ==============================================
 右侧栏中点击扩展，输入xdebug，出来的php debug，点击安装。
 在菜单栏：文件->首选项->配置，右边新增加一行配置：
