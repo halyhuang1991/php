@@ -48,13 +48,12 @@
     xdebug.remote_port=9010
 ```
  ### Vscode
- #### 设置
+  #### 设置
         右侧栏中点击扩展，输入xdebug，出来的php debug，点击安装
         在菜单栏：文件->首选项->配置，右边新增加一行配置：
-        “php.validate.executablePath”: “C:/xampp/php/php.exe”
- #### .vscode\launch.json
-··· 
-                    {
+        "php.validate.executablePath": "C:/xampp/php/php.exe"
+  #### launch .vscode\launch.json
+``` {
                 // 使用 IntelliSense 了解相关属性。 
                 // 悬停以查看现有属性的描述。
                 // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
@@ -75,6 +74,6 @@
                         "port": 9001
                     }
                 ]
-            }
+    }
 ···
     
