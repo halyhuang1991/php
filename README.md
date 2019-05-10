@@ -29,8 +29,8 @@
             </Directory>
  ```
  ### 验证成功
-  + 在cmd窗口，执行netstat -an 看本机是否有监听 9000端口
-  + 在D:/C/github/php/文件夹里新建一个test.php文件。注意，一定要以打开文件夹的形式才能成功设置断点调试，单个文件无效
+  + 在cmd窗口，执行netstat -an 看本机是否有监听 9000端口  http://localhost:8082/dashboard/phpinfo.php
+  + 在D:/C/github/php/文件夹里新建一个test.php文件。http://localhost:9000/test.php
   + 点击齿轮，选择php->选择listen for xdebug
 ## 监听调试
  ### 安装
@@ -53,7 +53,8 @@
         在菜单栏：文件->首选项->配置，右边新增加一行配置：
         "php.validate.executablePath": "C:/xampp/php/php.exe"
   #### launch .vscode\launch.json
-``` {
+``` 
+{
                 // 使用 IntelliSense 了解相关属性。 
                 // 悬停以查看现有属性的描述。
                 // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
@@ -74,6 +75,6 @@
                         "port": 9001
                     }
                 ]
-    }
+}
 ···
     
