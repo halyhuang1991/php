@@ -28,6 +28,7 @@
                 Require all granted  
             </Directory>
  ```
+ ### control Pannel  start start start
  ### 验证成功
   + 在cmd窗口，执行netstat -an 看本机是否有监听 9000端口  http://localhost:8082/dashboard/phpinfo.php
   + 在D:/C/github/php/文件夹里新建一个test.php文件。http://localhost:9000/test.php
