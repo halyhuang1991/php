@@ -3,6 +3,7 @@ var json={
     text:"",
     nextid:1,
     step:0,
+    x:0, y:0, w:0, h:0
 
 }
 function Flow(id){
