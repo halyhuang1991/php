@@ -7,7 +7,7 @@
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
     <title>Bootstrap 101 Template</title>
 
-
+    <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <!-- Bootstrap -->
     <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 
@@ -24,6 +24,10 @@
      <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
      <script>
          document.createElement("abc-xyz");
+         $(function(){
+             var str=$('#btn').html();
+             $('#btnval').html(str);
+         })
      </script>
      <style type='text/css'>
      abc-xyz{
@@ -36,6 +40,9 @@
     <abc-xyz>
         <div class="inside">454545</div>
     </abc-xyz>
+    <i class="fa fa-euro"></i>
+    <button id='btn' type="button" class='fa fa-euro'>value2</button>
+    <span id="btnval"></span>
   </body>
 
 </html>
