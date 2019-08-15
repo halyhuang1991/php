@@ -32,6 +32,16 @@
           .container input{
             display: inline-block;
           }
+          .myrow{
+            display: inline-block;
+            font-size: 0px;
+            -webkit-text-size-adjust:none;
+          }
+          .myrow div.mycol{
+            display: inline-block;
+            font-size: 12px;
+            width: 145px;
+          }
         </style>
         <link href="../fontx8ulslndl/iconfont1.css" rel="stylesheet"/>
         <!-- https://icomoon.io/app/#/select -->
@@ -60,7 +70,7 @@
             /* overflow: auto; */
             color: #000;
             position: absolute;
-            width: 98%;
+            width: 96.5%;
             display: none;
           }
           .dropdownlist .list li{
@@ -73,15 +83,22 @@
             width: 100%;
             border-bottom: 1px dashed #cdcdcd;
             padding: 5px 0px 5px 7px;
-            height: 19px;
+            height: 15px;
             cursor: pointer;
             font-size: 0.85em;
           }
           .dropdownlist .list li:hover{
             background-color:bisque;
           }
-
-          
+          /* 去掉inline-box产生的间隔 */
+          /* https://www.zhangxinxu.com/wordpress/2012/04/inline-block-space-remove-%E5%8E%BB%E9%99%A4%E9%97%B4%E8%B7%9D/ */
+          div.space {
+          font-size: 0;
+          -webkit-text-size-adjust:none;
+          }
+          div.space span,div.space li,div.space a{
+            font-size: 16px;
+          }
         </style>
          <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
         <script >
@@ -106,7 +123,7 @@
         </script>
     </head>
     <body>
-       
+        <!-- http://localhost:9000/UI/Icon.html -->
         <div class="content unicode" style="display: block;">
             <ul class="icon_lists dib-box">
             
@@ -123,25 +140,38 @@
                 </li>
             </ul>
             <div class="container">
-              <div style="display: inline-block">
-                  <div class="dropdownlist">
-                      <div class="input icon iconfont">
-                        <input type="text">
-                      </div>
-                      <div class="list">
-                        <ul>
-                          <li>1</li> <li>2</li> <li>3</li> <li>4</li> <li>5</li> <li>6</li>
-                          <li>7</li> <li>8</li> <li>9</li> <li>10</li> <li>11</li> <li>12</li>
-                        </ul>
+              <div class="myrow">
+                    <div class="mycol"><div class="dropdownlist">
+                        <div class="input icon iconfont">
+                          <input type="text">
+                        </div>
+                        <div class="list">
+                          <ul>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                            <li>6</li>
+                            <li>7</li>
+                            <li>8</li>
+                            <li>9</li>
+                            <li>10</li>
+                            <li>11</li>
+                            <li>12</li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
+                  <div class="mycol"> <input type="text" value='ok1'/></div>
+                  <div class="mycol"> <input type="text" value='ok2'/></div>
               </div>
-                  <input type="text" value='ok1'/>
-                  <input type="text" value='ok2'/>
-                  <div style="clear: both"></div>
-                  <input type="text" value='ok'/>
-                  <input type="text" value='ok1'/>
-                  <input type="text" value='ok2'/>
+              <div style="clear: both"></div>
+              <div class="myrow">
+                  <div class="mycol"> <input type="text" value='ok0'/></div>
+                  <div class="mycol"> <input type="text" value='ok2'/></div>
+                  <div class="mycol"> <input type="text" value='ok3'/></div>
+              </div>
             </div>
             
     </body>
