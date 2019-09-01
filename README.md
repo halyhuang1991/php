@@ -78,4 +78,12 @@
                 ]
 }
 ···
-    
+    在另外一台电脑安装完git 点击gitbatch
+    复制.ssh文件到C:\Users\Administrator
+    git config --global user.name 'halyhuang1991'
+    git config --global user.email 'email'
+    git config --global github.user 'halyhuang1991'
+C:\Program Files\Git\cmd  点击start-ssh-agent
+
+vscode 安装github插件，打开项目文件夹，terminal    git pull origin master
+然后修改文件，加号-》打钩，输入comment=》push
